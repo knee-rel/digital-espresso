@@ -2,15 +2,6 @@ import React from "react";
 
 export default function Main() {
   return (
-    <div className="container mx-auto px-6">
-      {/* insert image at the class below */}
-      <div className="h-64 rounded-md overflow-hidden bg-cover bg-center">
-        <div className="bg-gray-900 bg-opacity-50 flex items-center h-full w-full">
-          <div className="px-10 max-w-xl">
-            <h2 className="text-2xl text-white font-semibold">Coffee</h2>
-            <p className="mt-2 text-gray-400">Buy me now while I am on sale!</p>
-            <button className="flex items-center mt-4 px-3 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
-              <span>Shop Now</span>
               <svg
                 className="h-5 w-5 mx-2"
                 fill="none"
@@ -37,12 +28,6 @@ export default function Main() {
                 Favorite Products
               </h2>
               <p className="mt-2 text-gray-400">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Tempore facere provident molestias ipsam sint voluptatum
-                pariatur.
-              </p>
-              <button className="flex items-center mt-4 px-3 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
-                <span>Shop Now!</span>
                 <svg
                   className="h-5 w-5 mx-2"
                   fill="none"
