@@ -1,22 +1,18 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import About from '../components/About'
+import Branches from "../components/Branches";
 
-const AboutPage = () => {
+export default function Home() {
   return (
     <div>
       <Navbar />
       <main>
-        <div>
-            <About />
-        </div>
+        <Branches />
       </main>
       <footer>
         <Footer />
       </footer>
     </div>
   );
-};
-
-export default AboutPage;
+}

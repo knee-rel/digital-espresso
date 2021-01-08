@@ -1,16 +1,27 @@
-const Details = (props) => {
-    
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
+
+const DetailsSignature = (props) => {
+  const router = useRouter();
   return (
     <section className="text-gray-700 body-font overflow-hidden bg-white">
       <div className="container px-5 py-24 mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           {/* <img alt="ecommerce" className="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="https://www.whitmorerarebooks.com/pictures/medium/2465.jpg"> */}
+          <Image
+            src="/coffee_3.jpg"
+            alt="Picture of coffee"
+            width={400}
+            height={400}
+            className="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200"
+          ></Image>
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
             <h2 className="text-sm title-font text-gray-500 tracking-widest">
               DIGITAL ESPRESSO
             </h2>
             <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">
-              {props.prodName}
+              Signature Coffee
             </h1>
             <div className="flex mb-4">
               <span className="flex items-center">
@@ -69,7 +80,7 @@ const Details = (props) => {
                 >
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
                 </svg>
-                <span className="text-gray-600 ml-3">4 Reviews</span>
+                <span className="text-gray-600 ml-3">10 Reviews</span>
               </span>
             </div>
             <p className="leading-relaxed">
@@ -133,7 +144,7 @@ const Details = (props) => {
             </div>
             <div className="flex">
               <span className="title-font font-medium text-2xl text-gray-900">
-                P299.00
+                P399.00
               </span>
               <button className="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">
                 Add to Cart
@@ -151,8 +162,9 @@ const Details = (props) => {
                 </svg>
               </button>
             </div>
-            <a
-              href="#"
+
+            <button
+              onClick={() => router.back()}
               class="flex font-semibold text-indigo-600 text-sm mt-10"
             >
               <svg
@@ -162,7 +174,7 @@ const Details = (props) => {
                 <path d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z" />
               </svg>
               Back
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -170,4 +182,4 @@ const Details = (props) => {
   );
 };
 
-export default Details;
+export default DetailsSignature;

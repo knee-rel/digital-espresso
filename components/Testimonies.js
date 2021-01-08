@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Testimonies = () => {
   return (
@@ -14,7 +15,13 @@ const Testimonies = () => {
             <div className="xl:w-1/3 md:w-1/2 p-4">
               <div className="items-center border border-gray-300 p-6 rounded-lg">
                 <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  {/* insert image here */}
+                  <Image
+                    src="/avatar_1.jpg"
+                    alt="Picture of coffee"
+                    width={400}
+                    height={400}
+                    className="w-full object-cover object-center rounded border border-gray-200"
+                  ></Image>
                 </div>
                 <h2 className="text-lg  font-medium title-font mb-2">
                   Best Coffee Ever
@@ -28,7 +35,13 @@ const Testimonies = () => {
             <div className="xl:w-1/3 md:w-1/2 p-4">
               <div className="items-center border border-gray-300 p-6 rounded-lg">
                 <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  {/* insert image here */}
+                  <Image
+                    src="/avatar_2.jpg"
+                    alt="Picture of coffee"
+                    width={400}
+                    height={400}
+                    className="w-full object-cover object-center rounded border border-gray-200"
+                  ></Image>
                 </div>
                 <h2 className="text-lg  font-medium title-font mb-2">
                   A Must Try!
@@ -39,10 +52,16 @@ const Testimonies = () => {
               </div>
             </div>
 
-            <div className="xl:w-1/3 md:w-1/2 p-4">
+            <div className=" xl:w-1/3 md:w-1/2 p-4">
               <div className="items-center border border-gray-300 p-6 rounded-lg">
                 <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  {/* insert image here */}
+                  <Image
+                    src="/avatar_3.jpg"
+                    alt="Picture of coffee"
+                    width={400}
+                    height={400}
+                    className="w-full object-cover object-center rounded border border-gray-200"
+                  ></Image>
                 </div>
                 <h2 className="text-lg  font-medium title-font mb-2">
                   You Will Live for It

@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div className="footer">
-      <section className="bg-gray-800 py-8 w-full">
+      <section className="bg-yellow-800 py-8 w-full">
         <div className="container mx-auto px-8">
           <div className="table w-full">
             <div className="block sm:table-cell">
@@ -13,24 +13,26 @@ export default function Footer() {
               </p>
               <ul className="list-reset text-sm mb-6">
                 <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                  <a href="#" className="text-white hover:text-grey-dark">
-                    Products
-                  </a>
+                  <Link href="/products">
+                    <a className="text-white hover:text-grey-dark">Products</a>
+                  </Link>
                 </li>
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                  <a href="#" className="text-white hover:text-grey-dark">
-                    Contact
-                  </a>
+                  <Link href="/contact">
+                    <a className="text-white hover:text-grey-dark">
+                      Contact Us
+                    </a>
+                  </Link>
                 </li>
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                  <a href="#" className="text-white hover:text-grey-dark">
-                    About Us
-                  </a>
+                  <Link href="/about">
+                    <a className="text-white hover:text-grey-dark">About Us</a>
+                  </Link>
                 </li>
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                  <a href="#" className="text-white hover:text-grey-dark">
-                    Branches
-                  </a>
+                  <Link href="/branches">
+                    <a className="text-white hover:text-grey-dark">Branches</a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -54,7 +56,7 @@ export default function Footer() {
             </div>
             <div className="block sm:table-cell">
               <p className="uppercase text-white text-base sm:mb-6 sm:w-1/4">
-               Policies
+                Policies
               </p>
               <ul className="list-reset text-sm mb-6">
                 <li className="mt-2 inline-block mr-2 sm:block sm:mr-0">
@@ -81,7 +83,9 @@ export default function Footer() {
               </div>
               <ul className="list-reset text-sm mb-6">
                 <li className="inline-block mr-2 sm:block sm:mr-0">
-                  <span className = 'text-white text-sm'>Want to stay updated?</span>
+                  <span className="text-white text-sm">
+                    Want to stay updated?
+                  </span>
                 </li>
               </ul>
               <div className="bg-white rounded-lg">
@@ -91,14 +95,14 @@ export default function Footer() {
                     className="m-1 p-2 appearance-none text-gray-700 text-sm focus:outline-none"
                     placeholder="Enter your email"
                   />
-                  <button className="w-full m-1 p-2 text-sm bg-gray-800 rounded-lg font-semibold uppercase lg:w-auto">
+                  <button className="w-full m-1 p-2 text-sm bg-gray-800 rounded-lg font-semibold uppercase lg:w-auto text-white">
                     subscribe
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <hr className="h-px mt-6 bg-gray-700 border-none" />
+          <hr className="h-px mt-6 bg-gray-200 border-none" />
           <div className="flex flex-col items-center justify-between mt-6 md:flex-row">
             <div>
               <a href="/" className="text-xl font-bold text-white">
