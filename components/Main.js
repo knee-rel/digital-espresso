@@ -2,18 +2,6 @@ import React from "react";
 
 export default function Main() {
   return (
-    <div className="container mx-auto px-6 my-10">
-      {/* insert image at the class below */}
-      <div className="h-64 rounded-md overflow-hidden bg-cover bg-center">
-          {/* <Image src = '/coffee.jpg' alt= 'coffee' width={500} height={500}/> */}
-        <div className="bg-gray-900 bg-opacity-50 flex items-center h-full w-full">
-          <div className="px-10 max-w-xl">
-            <h2 className="text-2xl text-white font-semibold">Coffee</h2>
-            <p className="mt-2 text-gray-400">
-              See all coffee specially crafted for caffeine lovers!
-            </p>
-            <button className="flex items-center mt-4 px-3 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
-              <span>View</span>
               <svg
                 className="h-5 w-5 mx-2"
                 fill="none"
@@ -40,34 +28,6 @@ export default function Main() {
                 Favorite Products
               </h2>
               <p className="mt-2 text-gray-400">
-                See our best-selling products!
-              </p>
-              <button className="flex items-center mt-4 px-3 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
-                <span>View</span>
-                <svg
-                  className="h-5 w-5 mx-2"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="w-full h-64 mt-8 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:mt-0 md:w-1/2">
-          <div className="bg-gray-900 bg-opacity-50 flex items-center h-full">
-            <div class="px-10 max-w-xl">
-              <h2 class="text-2xl text-white font-semibold">Sale</h2>
-              <p class="mt-2 text-gray-400">
-                See our discounted products!
-              </p>
-              <button className="flex items-center mt-4 px-3 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
-                <span>View</span>
                 <svg
                   className="h-5 w-5 mx-2"
                   fill="none"
